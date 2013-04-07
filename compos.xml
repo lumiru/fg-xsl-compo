@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet href="compos.xsl" type="text/xsl" title="Default style"?>
-<!DOCTYPE fleets PUBLIC "-//FGDOC//DTD FleetCompos XML//EN" "http://dev.speedfox.fr.nf/~lumiru/fg/fleets/compos.dtd">
+<!DOCTYPE fleets PUBLIC "-//FGDOC//DTD FleetCompos XML//EN" "./compos.dtd">
 <fleets>
 	<category>
 		<name>Generic</name>
