@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet href="compos.xsl" type="text/xsl" title="Default style"?>
-<!DOCTYPE fleets PUBLIC "-//FGDOC//DTD FleetCompos XML//EN" "./compos.dtd">
+<!DOCTYPE fleets PUBLIC "-//FGDOC//DTD FleetCompos XML//EN" "http://dev.speedfox.fr.nf/~lumiru/fg/fleets/compos.dtd">
 <fleets>
 	<category>
-		<name>Lukc</name>
+		<name>Generic</name>
 		<compo min-tech="4" min-pow="1k">
-			<name>CorZerGar+HellSent</name>
+			<name>CorséZéros</name>
 			<ships>
 				<front>
 					<ship amount="2">Corsairs</ship>
@@ -15,6 +15,34 @@
 				<back>
 					<ship amount="4">Hellcats</ship>
 					<ship amount="4">Sentinels</ship>
+				</back>
+			</ships>
+		</compo>
+		<compo min-tech="8" min-pow="1k" type="aggressive">
+			<name>When I Don't Know</name>
+			<ships>
+				<front>
+					<ship amount="2">Predators</ship>
+					<ship amount="2">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="4">Sentinels</ship>
+					<ship amount="1">Spectres</ship>
+				</back>
+			</ships>
+		</compo>
+		<compo min-tech="5" min-pow="10k" type="aggressive">
+			<name>When I Didn't Know</name>
+			<ships>
+				<front>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="2">Spectres</ship>
+					<ship amount="2">Raptors</ship>
 				</back>
 			</ships>
 		</compo>
@@ -35,10 +63,34 @@
 				</back>
 			</ships>
 		</compo>
+		<compo min-tech="5" min-pow="500" type="defensive">
+			<name>Survivor</name>
+			<ships>
+				<front>
+					<ship amount="1">Orions</ship>
+				</front>
+			</ships>
+			<strength>Shep fleets</strength>
+			<weakness>Anti-cargos</weakness>
+		</compo>
+		<compo min-tech="6" min-pow="2k" type="defensive">
+			<name>Soban tank</name>
+			<ships>
+				<front>
+					<ship amount="2">Paladins</ship>
+					<ship amount="2">Spectres</ship>
+					<ship amount="3">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="2">Valkiries</ship>
+					<ship amount="4">Sentinels</ship>
+				</back>
+			</ships>
+		</compo>
 	</category>
 	<category>
-		<name>Brute fleets</name>
-		<compo min-tech="4" min-pow="1k" faction="Brotherhood">
+		<name>Brutal fleets</name>
+		<compo min-tech="4" min-pow="1k" faction="Brotherhood" type="aggressive">
 			<name>Full Spectres</name>
 			<ships>
 				<front>
@@ -54,18 +106,53 @@
 			<strength>Full Oblivion</strength>
 			<weakness>Sentinels</weakness>
 		</compo>
-		<compo faction="AutonomousNetwork" type="aggressive">
-			<name>Full Phœnix</name>
+		<compo min-tech="6" min-pow="5k" type="aggressive">
+			<name>Full Styx</name>
 			<ships>
 				<front>
-					<ship amount="1">Phoenixes</ship>
+					<ship amount="4">Templars</ship>
+					<ship amount="5">Spectres</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="1">Styx</ship>
+				</back>
+			</ships>
+			<strength>Furies</strength>
+			<weakness>Brutal fleets</weakness>
+			<weakness>Spectres</weakness>
+		</compo>
+		<compo type="aggressive">
+			<name>Anti-cargos</name>
+			<ships>
+				<front>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="1">Recons</ship>
+					<ship amount="5">Corsairs</ship>
+					<ship amount="5">Styx</ship>
 				</front>
 			</ships>
-			<weakness>Everything</weakness>
+			<strength>Survivor</strength>
+			<weakness>Anything else</weakness>
+		</compo>
+		<compo type="aggressive" faction="Brotherhood">
+			<name>Low level</name>
+			<ships>
+				<front>
+					<ship amount="1">Corsairs</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="5">Shadows</ship>
+				</back>
+			</ships>
+			<strength>Low level AI</strength>
 		</compo>
 	</category>
 	<category>
-		<name>Just shit</name>
+		<name>Jokes</name>
 		<compo>
 			<name>Error 404.1</name>
 			<ships>
@@ -107,6 +194,41 @@
 					<ship amount="2">Furies</ship>
 				</back>
 			</ships>
+		</compo>
+	</category>
+	<category>
+		<name>Versus</name>
+		<compo min-tech="8" faction="Brotherhood" type="aggressive">
+			<name>Anti-minatoi PalaSpectres</name>
+			<ships>
+				<front>
+					<ship amount="2">Furies</ship>
+					<ship amount="2">Predators</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="3">Shadows</ship>
+					<ship amount="3">Sentinels</ship>
+				</back>
+			</ships>
+			<strength>Banshees</strength>
+			<strength>Tigers</strength>
+			<weakness>Styx</weakness>
+		</compo>
+		<compo min-tech="7" faction="GalacticDiplomaticOffice" type="aggressive">
+			<name>minatoi PalaSpectres</name>
+			<ships>
+				<front>
+					<ship amount="3">Banshees</ship>
+					<ship amount="2">Paladins</ship>
+					<ship amount="2">Spectres</ship>
+				</front>
+				<back>
+					<ship amount="4">Seraphins</ship>
+					<ship amount="4">Tigers</ship>
+				</back>
+			</ships>
+			<weakness>Anti-minatoi PalaSpectres</weakness>
 		</compo>
 	</category>
 </fleets>

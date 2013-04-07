@@ -6,7 +6,6 @@
 <!ATTLIST compo faction (Brotherhood|GalacticDiplomaticOffice|AutonomousNetwork) #IMPLIED>
 <!ATTLIST compo type (aggressive|defensive|mixed) "mixed">
 <!ELEMENT name (#PCDATA)>
-<!ELEMENT category (#PCDATA)>
 <!ELEMENT ships (front, back?)>
 <!ELEMENT front (ship*)>
 <!ELEMENT back (ship*)>
