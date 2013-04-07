@@ -1,0 +1,368 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 12pt;
+}
+
+body {
+	background: black url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/31.jpg") center;
+	color: #BBB;
+
+	text-shadow:
+		1px 1px 1px #000,
+		-1px 1px 1px #000,
+		1px -1px 1px #000,
+		-1px -1px 1px #000;
+}
+
+h1 {
+	width: 500px;
+	margin: 20px auto;
+	font-size: 30px;
+	padding-top: 10px;
+	border-top: 1px solid #444444;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+.compo {
+	margin: 20px;
+	width: 502px; /* Should be 500, but I’m lazy to make it clean */
+
+	border: 1px solid #444;
+	border-radius: 3px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.compname {
+	margin: 20px 20px 10px 20px;
+	font-size: 18pt;
+}
+
+.faction {
+	margin:-3px 0 10px 45px;
+	font-weight: bold;
+}
+
+.factionimage {
+	height: 25px;
+	width: 30px;
+
+	display: inline-block;
+
+	margin-bottom: -4px;
+	margin-right: 10px;
+}
+
+.allFactions {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/61.jpg");
+} .allFactions .faction {
+	/* Should not exist. */
+} .allFactions .factionimage {
+	background: url("graphics.png") 0px -2215px;
+}
+
+.Brotherhood {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/51.jpg");
+} .Brotherhood .faction {
+	color: #D00;
+	text-shadow: 0 0 5px #444;
+} .Brotherhood .factionimage {
+	background: url("graphics.png") -60px -2215px;
+}
+
+.GalacticDiplomaticOffice {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/11.jpg");
+} .GalacticDiplomaticOffice .faction {
+	color: #06D;
+	text-shadow: 0 0 5px #444;
+} .GalacticDiplomaticOffice .factionimage {
+	background: url("graphics.png") -30px -2215px;
+}
+
+.AutonomousNetwork {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/41.jpg");
+} .AutonomousNetwork .faction {
+	color: #CA0;
+	text-shadow: 0 0 5px #444;
+} .AutonomousNetwork .factionimage {
+	background: url("graphics.png") -90px -2215px;
+}
+
+.Brotherhood *, .GalacticDiplomaticOffice *, .AutonomousNetwork * {
+	background-image: none;
+}
+
+.minPower, .minTech {
+	font-size: 10pt;
+
+	float:right;
+
+	margin-top: -32px;
+
+	font-family: Sans-Serif;
+} .minPower {
+	margin-right: 14px;
+} .minTech {
+	margin-right: 54px;
+}
+
+
+.power, .tech {
+	display: inline-block;
+
+	width: 15px;
+	height: 15px;
+
+	margin-bottom: -5px;
+} .power {
+	background: url("graphics.png") -345px -55px;
+} .tech {
+	background: url("graphics.png") -442px -40px;
+	margin-bottom: -3px;
+}
+
+.counters, .fleet {
+	border: 1px solid #444;
+	border-radius: 3px;
+
+	padding: 20px;
+	margin: 5px;
+	
+	background-color: rgba(255,255,255,0.05);
+}
+
+.counters, .fleet, .frontShips, .backShips {
+	width: 450px; /* more than .ship’s width × 5 */
+}
+
+/*
+ * F L E E T S
+ */
+
+.frontShips, .backShips {
+	display: block;
+	text-align: center;
+}
+
+.ship {
+	display: inline-block;
+
+	border: 1px solid #000;
+	border-radius: 5px;
+
+	background-color: #000;
+	background-color: rgba(0,0,0,0.6);
+
+	padding: 3px 0 0 0;
+	margin: 1px;
+	width: 85px;
+
+	text-align: center;
+	font-size: 10pt;
+}
+
+.ship .shipimage {
+	background-image: url("ships.png");
+	width: 50px;
+	height: 50px;
+
+	margin-bottom: -3px;
+	margin-left: 2px; /* Looks better :$ */
+
+	display: inline-block;
+}
+
+.ship .amount * {
+	text-align: center;
+	font-size: 8pt;
+}
+
+.ship .amount *:before {
+	content: "(";
+} .ship .amount *:after {
+	content: ")";
+}
+
+/*
+ * A M O U N T S
+ */
+
+.amount1 {
+	color: #1D0;
+} .amount2 {
+	color: #4A0;
+} .amount3 {
+	color: #770;
+} .amount4 {
+	color: #A40;
+} .amount5 {
+	color: #D10;
+}
+
+/*
+ * C O U N T E R S
+ */
+
+.counters {
+	border-radius: 3px;
+
+	padding: 20px;
+}
+
+.counters div {
+	margin: 10px 20px;
+}
+
+.counters li {
+	list-style-type: none;
+
+	margin: 3px 20px;
+}
+
+/*
+ * S H I P S
+ */
+
+/*
+ * The images come from http://media.pandora.fallengalaxy.com/style/imports/images/ships.png
+ */
+
+.Corsairs {
+	background-position: -100px -50px;
+}
+
+.Fortress {
+	background-position: -150px -50px;
+}
+
+.Zeros {
+	background-position: -200px -50px;
+}
+
+.Blades {
+	background-position: -250px -50px;
+}
+
+.Guardians {
+	background-position: -300px -50px;
+}
+
+.Raiders {
+	background-position: -350px -50px;
+}
+
+.Shadows {
+	background-position: -450px -50px;
+}
+
+.ReconFalcons {
+	background-position: -550px -50px;
+}
+
+.Valkiries {
+	background-position: -1050px -50px;
+}
+
+.Hellcats {
+	background-position: -1100px -50px;
+}
+
+.Spectres {
+	background-position: -1150px -50px;
+}
+
+.Raptors {
+	background-position: -1200px -50px;
+}
+
+.Sentinels {
+	background-position: -1250px -50px;
+}
+
+.Banshees {
+	background-position: -1300px -50px;
+}
+
+.Paladins {
+	background-position: -2050px -50px;
+}
+
+.Furies {
+	background-position: -2100px -50px;
+}
+
+.Liberties {
+	background-position: -2150px -50px;
+}
+
+.Styx {
+	background-position: -2200px -50px;
+}
+
+.Seraphins {
+	background-position: -2250px -50px;
+}
+
+.Scorpions {
+	background-position: -2300px -50px;
+}
+
+.Hades {
+	background-position: -2350px -50px;
+}
+
+.Phoenixes {
+	background-position: -2400px -50px;
+}
+
+.Templars {
+	background-position: -3050px -50px;
+}
+
+.Oblivions {
+	background-position: -3100px -50px;
+}
+
+.Hurricanes {
+	background-position: -3150px -50px;
+}
+
+.Predators {
+	background-position: -3200px -50px;
+}
+
+.Eclipses {
+	background-position: -3250px -50px;
+}
+
+.aggressive, .defensive {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(icons.png);
+    background-repeat: no-repeat;
+    margin-left: 8px;
+}
+
+.aggressive {
+    background-position: -727px -7px;
+}
+
+.defensive {
+    background-position: -456px -7px;
+}
+
+a, a:link, a:visited {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+a:link:after {
+  content: " ↗";
+}
