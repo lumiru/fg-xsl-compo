@@ -245,22 +245,34 @@
 			</ships>
 			<weakness>Anti-minatoi PalaSpectres</weakness>
 		</compo>
-	</category>
-	<category>
-		<name>Yet unclassified</name>
-		<compo min-pow="5k">
+		<compo min-pow="5k" type="aggressive">
 			<name>Ishama-one</name>
 			<ships>
 				<front>
-					<ship amount="2">Blades</ship>
+					<ship amount="3">Blades</ship>
 					<ship amount="5">Guardians</ship>
 					<ship amount="4">Banshees</ship>
 				</front>
 				<back>
 					<ship amount="5">Hellcats</ship>
-					<ship amount="3">Hades</ship>
+					<ship amount="2">Hades</ship>
 				</back>
 			</ships>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Ishama-two</name>
+			<ships>
+				<front>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+					<ship amount="4">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Furies</ship>
+				</back>
+			</ships>
+			<strength>Sentinels</strength>
 		</compo>
 	</category>
 </fleets>
