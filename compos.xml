@@ -119,9 +119,24 @@
 					<ship amount="1">Styx</ship>
 				</back>
 			</ships>
-			<strength>Furies</strength>
+			<strength>Full Fury</strength>
 			<weakness>Brutal fleets</weakness>
 			<weakness>Spectres</weakness>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Full Fury</name>
+			<ships>
+				<front>
+					<ship amount="4">Templars</ship>
+					<ship amount="5">Spectres</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="4">Hellcats</ship>
+					<ship amount="1">Furies</ship>
+				</back>
+			</ships>
+			<weakness>Full Styx</weakness>
 		</compo>
 		<compo type="aggressive">
 			<name>Anti-cargos</name>
@@ -229,6 +244,23 @@
 				</back>
 			</ships>
 			<weakness>Anti-minatoi PalaSpectres</weakness>
+		</compo>
+	</category>
+	<category>
+		<name>Yet unclassified</name>
+		<compo min-pow="5k">
+			<name>Ishama-one</name>
+			<ships>
+				<front>
+					<ship amount="2">Blades</ship>
+					<ship amount="5">Guardians</ship>
+					<ship amount="4">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="3">Hades</ship>
+				</back>
+			</ships>
 		</compo>
 	</category>
 </fleets>
