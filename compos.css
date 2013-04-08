@@ -233,6 +233,10 @@ h2 {
  * The images come from http://media.pandora.fallengalaxy.com/style/imports/images/ships.png
  */
 
+.Recons {
+	background-position: -50px -50px;
+}
+
 .Corsairs {
 	background-position: -100px -50px;
 }
@@ -255,6 +259,10 @@ h2 {
 
 .Raiders {
 	background-position: -350px -50px;
+}
+
+.Tigers {
+	background-position: -400px -50px;
 }
 
 .Shadows {
@@ -341,16 +349,20 @@ h2 {
 	background-position: -3250px -50px;
 }
 
+.Titans {
+	background-position: -5050px -50px;
+}
+
 .Mules {
-	background-position: -3250px -50px;
+	background-position: -6050px -50px;
 }
 
 .Mammouths {
-	background-position: -3250px -50px;
+	background-position: -6100px -50px;
 }
 
 .Orions {
-	background-position: -3250px -50px;
+	background-position: -6150px -50px;
 }
 
 .aggressive, .defensive {
