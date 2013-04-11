@@ -7,6 +7,8 @@
 <!ATTLIST compo type (aggressive|defensive|mixed) "mixed">
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT ships (front, back?)>
+<!ATTLIST ships type (variation) #IMPLIED>
+<!ATTLIST ships title CDATA #IMPLIED>
 <!ELEMENT front (ship*)>
 <!ELEMENT back (ship*)>
 <!ELEMENT ship (#PCDATA)>

@@ -119,6 +119,16 @@
 					<ship amount="1">Styx</ship>
 				</back>
 			</ships>
+			<ships type="variation" title="Without Guardians">
+				<front>
+					<ship amount="4">Templars</ship>
+					<ship amount="5">Spectres</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="1">Styx</ship>
+				</back>
+			</ships>
 			<strength>Furies</strength>
 			<weakness>Brutal fleets</weakness>
 			<weakness>Spectres</weakness>

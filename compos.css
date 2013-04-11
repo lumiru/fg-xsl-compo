@@ -61,36 +61,44 @@ h2 {
 
 .allFactions {
 	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/61.jpg");
-} .allFactions .faction {
+}
+.allFactions .faction {
 	/* Should not exist. */
-} .allFactions .factionimage {
+}
+.allFactions .factionimage {
 	background: url("graphics.png") 0px -2215px;
 }
 
 .Brotherhood {
 	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/51.jpg");
-} .Brotherhood .faction {
+}
+.Brotherhood .faction {
 	color: #D00;
 	text-shadow: 0 0 5px #444;
-} .Brotherhood .factionimage {
+}
+.Brotherhood .factionimage {
 	background: url("graphics.png") -60px -2215px;
 }
 
 .GalacticDiplomaticOffice {
 	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/11.jpg");
-} .GalacticDiplomaticOffice .faction {
+}
+.GalacticDiplomaticOffice .faction {
 	color: #06D;
 	text-shadow: 0 0 5px #444;
-} .GalacticDiplomaticOffice .factionimage {
+}
+.GalacticDiplomaticOffice .factionimage {
 	background: url("graphics.png") -30px -2215px;
 }
 
 .AutonomousNetwork {
 	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/41.jpg");
-} .AutonomousNetwork .faction {
+}
+.AutonomousNetwork .faction {
 	color: #CA0;
 	text-shadow: 0 0 5px #444;
-} .AutonomousNetwork .factionimage {
+}
+.AutonomousNetwork .factionimage {
 	background: url("graphics.png") -90px -2215px;
 }
 
@@ -106,9 +114,11 @@ h2 {
 	margin-top: -32px;
 
 	font-family: Sans-Serif;
-} .minPower {
+}
+.minPower {
 	margin-right: 14px;
-} .minTech {
+}
+.minTech {
 	margin-right: 54px;
 }
 
@@ -120,9 +130,11 @@ h2 {
 	height: 15px;
 
 	margin-bottom: -5px;
-} .power {
+}
+.power {
 	background: url("graphics.png") -345px -55px;
-} .tech {
+}
+.tech {
 	background: url("graphics.png") -442px -40px;
 	margin-bottom: -3px;
 }
@@ -139,6 +151,21 @@ h2 {
 
 .counters, .fleet, .frontShips, .backShips {
 	width: 450px; /* more than .ship’s width × 5 */
+}
+
+.variations .selected {
+	color: #ffffff;
+}
+
+.variation h4 {
+	font-size: 90%;
+	padding-left: 20px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.variation .ships {
+	display: none;
 }
 
 /*
@@ -233,6 +260,10 @@ h2 {
  * The images come from http://media.pandora.fallengalaxy.com/style/imports/images/ships.png
  */
 
+.Recons {
+	background-position: -50px -50px;
+}
+
 .Corsairs {
 	background-position: -100px -50px;
 }
@@ -259,6 +290,10 @@ h2 {
 
 .Shadows {
 	background-position: -450px -50px;
+}
+
+.Tigers {
+	background-position: -400px -50px;
 }
 
 .ReconFalcons {
@@ -342,39 +377,39 @@ h2 {
 }
 
 .Mules {
-	background-position: -3250px -50px;
+	background-position: -6050px -50px;
 }
 
 .Mammouths {
-	background-position: -3250px -50px;
+	background-position: -6102px -50px;
 }
 
 .Orions {
-	background-position: -3250px -50px;
+	background-position: -6152px -50px;
 }
 
 .aggressive, .defensive {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url(icons.png);
-    background-repeat: no-repeat;
-    margin-left: 8px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(icons.png);
+	background-repeat: no-repeat;
+	margin-left: 8px;
 }
 
 .aggressive {
-    background-position: -727px -7px;
+	background-position: -727px -7px;
 }
 
 .defensive {
-    background-position: -456px -7px;
+	background-position: -456px -7px;
 }
 
 a, a:link, a:visited {
-    color: #bbbbbb;
-    text-decoration: none;
+	color: #bbbbbb;
+	text-decoration: none;
 }
 
 a:link:after {
-  content: " ↗";
+	content: " ↗";
 }

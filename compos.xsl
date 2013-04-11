@@ -69,30 +69,40 @@
 
 				<xsl:if test="ships">
 					<div class="fleet">
-						<xsl:for-each select="ships/*">
-							<div class="{name(.)}Ships ships">
-								<xsl:for-each select="ship">
-									<!--xsl:sort select="@amount"/> Do not do it! The order is important. -->
-									<div class="ship">
-										<div class="shipimage {.}"></div>
-										<div class="amount">
-											<span class="amount{@amount}">
-												<xsl:choose>
-													<xsl:when test="@amount = '1'">lots of</xsl:when>
-													<xsl:when test="@amount = '2'">many</xsl:when>
-													<xsl:when test="@amount = '3'">some</xsl:when>
-													<xsl:when test="@amount = '4'">few</xsl:when>
-													<xsl:when test="@amount = '5'">very few</xsl:when>
-													<xsl:otherwise>???</xsl:otherwise>
-												</xsl:choose>
-											</span>
-										</div>
-										<xsl:value-of select="." />
-									</div>
-								</xsl:for-each>
-							</div>
+						<xsl:for-each select="ships[not(@type)]/*">
+							<xsl:call-template name="shipList" />
 						</xsl:for-each>
 					</div>
+
+					<xsl:if test="ships[@type = 'variation']">
+						<div class="fleet variations">
+							<h3>Variations</h3>
+							<div class="variation selected">
+								<h4>Default</h4>
+								<div class="ships">
+									<xsl:for-each select="ships[not(@type)]/*">
+										<xsl:call-template name="shipList" />
+									</xsl:for-each>
+								</div>
+							</div>
+							<xsl:for-each select="ships[@type = 'variation']">
+								<div class="variation">
+									<h4>
+										<xsl:choose>
+											<xsl:when test="@title"><xsl:value-of select="@title" /></xsl:when>
+											<xsl:otherwise>Variation <xsl:value-of select="position()" /></xsl:otherwise>
+										</xsl:choose>
+									</h4>
+									
+									<div class="ships">
+										<xsl:for-each select="*">
+											<xsl:call-template name="shipList" />
+										</xsl:for-each>
+									</div>
+								</div>
+							</xsl:for-each>
+						</div>
+					</xsl:if>
 				</xsl:if>
 
 				<xsl:if test="strength or weakness">
@@ -123,30 +133,7 @@
 			</div>
 		</xsl:for-each>
 	</xsl:for-each>
-	<script type="text/javascript">
-
-var links = document.getElementsByClassName("compo-type-link");
-var compos = document.getElementsByTagName("h2");
-var compoNames = [];
-var id, idx, text;
-
-for(var i = 0, l = compos.length; i &lt; l; ++i) {
-	compoNames[i] = compos[i].textContent;
-}
-
-for(var i = 0, l = links.length; i &lt; l; ++i) {
-	text = links[i].textContent;
-	idx = compoNames.indexOf(text);
-	if(idx >= 0) {
-		id = text.replace(/[^a-z0-9]+/i, "-")
-			.replace(/([A-Z])/, "-$1").replace(/-+/, "-")
-			.replace(/^-*/, "").toLowerCase();
-		compos[idx].id = id;
-		links[i].href = "#"+id;
-	}
-}
-
-	</script>
+	<script type="text/javascript" src="compos.js"></script>
 </body>
 </html>
 
@@ -164,6 +151,30 @@ for(var i = 0, l = links.length; i &lt; l; ++i) {
 			</xsl:otherwise>
 		</xsl:choose-->
 	</li>
+</xsl:template>
+
+<xsl:template name="shipList">
+	<div class="{name(.)}Ships ships">
+		<xsl:for-each select="ship">
+			<!--xsl:sort select="@amount"/> Do not do it! The order is important. -->
+			<div class="ship">
+				<div class="shipimage {translate(.,' ','')}"></div>
+				<div class="amount">
+					<span class="amount{@amount}">
+						<xsl:choose>
+							<xsl:when test="@amount = '1'">lots of</xsl:when>
+							<xsl:when test="@amount = '2'">many</xsl:when>
+							<xsl:when test="@amount = '3'">some</xsl:when>
+							<xsl:when test="@amount = '4'">few</xsl:when>
+							<xsl:when test="@amount = '5'">very few</xsl:when>
+							<xsl:otherwise>???</xsl:otherwise>
+						</xsl:choose>
+					</span>
+				</div>
+				<xsl:value-of select="." />
+			</div>
+		</xsl:for-each>
+	</div>
 </xsl:template>
 
 </xsl:stylesheet> 
