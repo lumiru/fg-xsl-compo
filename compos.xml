@@ -82,7 +82,7 @@
 			<name>Survivor</name>
 			<ships>
 				<front>
-					<ship amount="1">Orions</ship>
+					<ship amount="-1">Orions</ship>
 				</front>
 			</ships>
 			<strength>Shep fleets</strength>
@@ -157,10 +157,10 @@
 			<name>Anti-cargos</name>
 			<ships>
 				<front>
-					<ship amount="5">Hellcats</ship>
+					<ship amount="6">Hellcats</ship>
 					<ship amount="1">Recons</ship>
-					<ship amount="5">Corsairs</ship>
-					<ship amount="5">Styx</ship>
+					<ship amount="6">Corsairs</ship>
+					<ship amount="6">Styx</ship>
 				</front>
 			</ships>
 			<strength>Survivor</strength>
@@ -170,8 +170,8 @@
 			<name>Anti-raiders</name>
 			<ships>
 				<front>
-					<ship amount="5">Templars</ship>
-					<ship amount="5">Hellcats</ship>
+					<ship amount="6">Templars</ship>
+					<ship amount="6">Hellcats</ship>
 					<ship amount="1">Paladins</ship>
 				</front>
 				<back>
@@ -267,7 +267,7 @@
 			<name>Raiders</name>
 			<ships>
 				<front>
-					<ship amount="1">Raiders</ship>
+					<ship amount="0">Raiders</ship>
 				</front>
 			</ships>
 			<strength>None</strength>

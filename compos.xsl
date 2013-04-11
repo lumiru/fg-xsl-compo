@@ -78,11 +78,14 @@
 										<div class="amount">
 											<span class="amount{@amount}">
 												<xsl:choose>
+													<xsl:when test="@amount = '0'">only</xsl:when>
 													<xsl:when test="@amount = '1'">lots of</xsl:when>
 													<xsl:when test="@amount = '2'">many</xsl:when>
 													<xsl:when test="@amount = '3'">some</xsl:when>
 													<xsl:when test="@amount = '4'">few</xsl:when>
 													<xsl:when test="@amount = '5'">very few</xsl:when>
+													<xsl:when test="@amount = '6'">one</xsl:when>
+													<xsl:when test="@amount = '-1'">unlimited</xsl:when>
 													<xsl:otherwise>???</xsl:otherwise>
 												</xsl:choose>
 											</span>

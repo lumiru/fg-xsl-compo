@@ -202,7 +202,10 @@ h2 {
  * A M O U N T S
  */
 
-.amount1 {
+.amount0 {
+	/* only */
+	color: #06D;
+} .amount1 {
 	color: #1D0;
 } .amount2 {
 	color: #4A0;
@@ -212,6 +215,12 @@ h2 {
 	color: #A40;
 } .amount5 {
 	color: #D10;
+} .amount6 {
+	/* single */
+	color: #A08;
+} .amount-1 {
+	/* cargo */
+	color: #06D;
 }
 
 /*
