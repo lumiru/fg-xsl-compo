@@ -46,6 +46,21 @@
 				</back>
 			</ships>
 		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Recons</name>
+			<ships>
+				<front>
+					<ship amount="3">Templars</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="3">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Recons</ship>
+				</back>
+			</ships>
+			<strength>Raiders</strength>
+		</compo>
 	</category>
 	<category>
 		<name>Defensive fleets</name>
@@ -151,6 +166,22 @@
 			<strength>Survivor</strength>
 			<weakness>Anything else</weakness>
 		</compo>
+		<compo type="aggressive">
+			<name>Anti-raiders</name>
+			<ships>
+				<front>
+					<ship amount="5">Templars</ship>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="1">Paladins</ship>
+				</front>
+				<back>
+					<ship amount="5">Corsairs</ship>
+				</back>
+			</ships>
+			<strength>Raiders</strength>
+			<weakness>Anything else</weakness>
+			<note>Tested by Lukc, may be improved for resilience.</note>
+		</compo>
 		<compo type="aggressive" faction="Brotherhood">
 			<name>Low level</name>
 			<ships>
@@ -167,7 +198,81 @@
 		</compo>
 	</category>
 	<category>
-		<name>Jokes</name>
+		<name>Versus</name>
+		<compo min-tech="8" faction="Brotherhood" type="aggressive">
+			<name>Anti-minatoi PalaSpectres</name>
+			<ships>
+				<front>
+					<ship amount="2">Furies</ship>
+					<ship amount="2">Predators</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="3">Shadows</ship>
+					<ship amount="3">Sentinels</ship>
+				</back>
+			</ships>
+			<strength>Banshees</strength>
+			<strength>Tigers</strength>
+			<weakness>Styx</weakness>
+		</compo>
+		<compo min-tech="7" faction="GalacticDiplomaticOffice" type="aggressive">
+			<name>minatoi PalaSpectres</name>
+			<ships>
+				<front>
+					<ship amount="3">Banshees</ship>
+					<ship amount="2">Paladins</ship>
+					<ship amount="2">Spectres</ship>
+				</front>
+				<back>
+					<ship amount="4">Seraphins</ship>
+					<ship amount="4">Tigers</ship>
+				</back>
+			</ships>
+			<weakness>Anti-minatoi PalaSpectres</weakness>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Isha-one</name>
+			<ships>
+				<front>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+					<ship amount="4">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Hades</ship>
+				</back>
+			</ships>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Isha-two</name>
+			<ships>
+				<front>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+					<ship amount="4">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Furies</ship>
+				</back>
+			</ships>
+			<strength>Sentinels</strength>
+		</compo>
+	</category>
+	<category>
+		<name>Weak compositions</name>
+		<compo type="architect">
+			<name>Raiders</name>
+			<ships>
+				<front>
+					<ship amount="1">Raiders</ship>
+				</front>
+			</ships>
+			<strength>None</strength>
+			<weakness>Everything</weakness>
+		</compo>
 		<compo>
 			<name>Error 404.1</name>
 			<ships>
@@ -209,70 +314,6 @@
 					<ship amount="2">Furies</ship>
 				</back>
 			</ships>
-		</compo>
-	</category>
-	<category>
-		<name>Versus</name>
-		<compo min-tech="8" faction="Brotherhood" type="aggressive">
-			<name>Anti-minatoi PalaSpectres</name>
-			<ships>
-				<front>
-					<ship amount="2">Furies</ship>
-					<ship amount="2">Predators</ship>
-					<ship amount="5">Guardians</ship>
-				</front>
-				<back>
-					<ship amount="3">Shadows</ship>
-					<ship amount="3">Sentinels</ship>
-				</back>
-			</ships>
-			<strength>Banshees</strength>
-			<strength>Tigers</strength>
-			<weakness>Styx</weakness>
-		</compo>
-		<compo min-tech="7" faction="GalacticDiplomaticOffice" type="aggressive">
-			<name>minatoi PalaSpectres</name>
-			<ships>
-				<front>
-					<ship amount="3">Banshees</ship>
-					<ship amount="2">Paladins</ship>
-					<ship amount="2">Spectres</ship>
-				</front>
-				<back>
-					<ship amount="4">Seraphins</ship>
-					<ship amount="4">Tigers</ship>
-				</back>
-			</ships>
-			<weakness>Anti-minatoi PalaSpectres</weakness>
-		</compo>
-		<compo min-pow="5k" type="aggressive">
-			<name>Ishama-one</name>
-			<ships>
-				<front>
-					<ship amount="3">Blades</ship>
-					<ship amount="5">Guardians</ship>
-					<ship amount="4">Banshees</ship>
-				</front>
-				<back>
-					<ship amount="5">Hellcats</ship>
-					<ship amount="2">Hades</ship>
-				</back>
-			</ships>
-		</compo>
-		<compo min-pow="5k" type="aggressive">
-			<name>Ishama-two</name>
-			<ships>
-				<front>
-					<ship amount="3">Blades</ship>
-					<ship amount="5">Guardians</ship>
-					<ship amount="4">Banshees</ship>
-				</front>
-				<back>
-					<ship amount="5">Hellcats</ship>
-					<ship amount="2">Furies</ship>
-				</back>
-			</ships>
-			<strength>Sentinels</strength>
 		</compo>
 	</category>
 </fleets>
