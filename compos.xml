@@ -78,7 +78,7 @@
 				</back>
 			</ships>
 		</compo>
-		<compo min-tech="5" min-pow="500" type="defensive">
+		<compo min-tech="5" min-pow="500" type="cargo">
 			<name>Survivor</name>
 			<ships>
 				<front>
@@ -312,6 +312,20 @@
 				<back>
 					<ship amount="5">Hellcats</ship>
 					<ship amount="2">Furies</ship>
+				</back>
+			</ships>
+		</compo>
+		<compo faction="Hybrid">
+			<name>Test Shadow Tigres</name>
+			<ships>
+				<front>
+					<ship amount="2">Corsairs</ship>
+					<ship amount="2">Zeros</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="4">Shadows</ship>
+					<ship amount="4">Tigres</ship>
 				</back>
 			</ships>
 		</compo>

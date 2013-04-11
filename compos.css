@@ -67,6 +67,15 @@ h2 {
 	background: url("graphics.png") 0px -2215px;
 }
 
+.Hybrid {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/71.jpg");
+} .Hybrid .faction {
+	color: #DDD;
+	text-shadow: 0 0 5px #444;
+} .Hybrid .factionimage {
+	background: url("graphics.png") -0px -2215px;
+}
+
 .Brotherhood {
 	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/51.jpg");
 } .Brotherhood .faction {
@@ -275,7 +284,7 @@ h2 {
 	background-position: -350px -50px;
 }
 
-.Tigers {
+.Tigers, .Tigres {
 	background-position: -400px -50px;
 }
 
@@ -379,26 +388,34 @@ h2 {
 	background-position: -6150px -50px;
 }
 
-.aggressive, .defensive {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url(icons.png);
-    background-repeat: no-repeat;
-    margin-left: 8px;
+.aggressive, .defensive, .architect, .cargo {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(icons.png);
+	background-repeat: no-repeat;
+	margin-left: 8px;
 }
 
 .aggressive {
-    background-position: -727px -7px;
+	background-position: -727px -7px;
 }
 
 .defensive {
-    background-position: -456px -7px;
+	background-position: -456px -7px;
+}
+
+.architect {
+	background-position: -426px -7px;
+}
+
+.cargo {
+	background-position: -967px -7px;
 }
 
 a, a:link, a:visited {
-    color: #bbbbbb;
-    text-decoration: none;
+	color: #bbbbbb;
+	text-decoration: none;
 }
 
 a:link:after {

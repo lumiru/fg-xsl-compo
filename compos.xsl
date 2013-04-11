@@ -38,7 +38,7 @@
 
 					<xsl:value-of select="name" />
 
-					<xsl:if test="@type = 'aggressive' or @type = 'defensive'">
+					<xsl:if test="@type = 'aggressive' or @type = 'defensive' or @type = 'architect' or @type = 'cargo'">
 						<span class="{@type}"></span>
 					</xsl:if>
 				</h2>
