@@ -127,7 +127,7 @@ h2 {
 	margin-bottom: -3px;
 }
 
-.counters, .fleet {
+.counters, .fleet, .notes {
 	border: 1px solid #444;
 	border-radius: 3px;
 
@@ -220,6 +220,20 @@ h2 {
 }
 
 .counters li {
+	list-style-type: none;
+
+	margin: 3px 20px;
+}
+
+/*
+ * N O T E S
+ */
+
+.notes {
+	padding: 20px;
+}
+
+.notes li {
 	list-style-type: none;
 
 	margin: 3px 20px;

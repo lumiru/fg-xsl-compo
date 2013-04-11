@@ -120,6 +120,16 @@
 						</xsl:if>
 					</div>
 				</xsl:if>
+				<xsl:if test="note">
+					<div class="notes">
+						<h4>Notes</h4>
+						<ul>
+							<xsl:for-each select="note">
+								<li class="note"><xsl:value-of select="."/></li>
+							</xsl:for-each>
+						</ul>
+					</div>
+				</xsl:if>
 			</div>
 		</xsl:for-each>
 	</xsl:for-each>
