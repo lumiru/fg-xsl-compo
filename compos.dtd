@@ -1,10 +1,10 @@
 <!ELEMENT fleets (category*)>
 <!ELEMENT category (name, compo*)>
-<!ELEMENT compo (name, ships, strength*, weakness*)>
+<!ELEMENT compo (name, ships, strength*, weakness*, note?)>
 <!ATTLIST compo min-pow CDATA #IMPLIED>
 <!ATTLIST compo min-tech CDATA #IMPLIED>
-<!ATTLIST compo faction (Brotherhood|GalacticDiplomaticOffice|AutonomousNetwork) #IMPLIED>
-<!ATTLIST compo type (aggressive|defensive|mixed) "mixed">
+<!ATTLIST compo faction (Brotherhood|GalacticDiplomaticOffice|AutonomousNetwork|Hybrid) #IMPLIED>
+<!ATTLIST compo type (aggressive|defensive|cargo|architect|mixed) "mixed">
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT ships (front, back?)>
 <!ATTLIST ships type (variation) #IMPLIED>
@@ -12,6 +12,7 @@
 <!ELEMENT front (ship*)>
 <!ELEMENT back (ship*)>
 <!ELEMENT ship (#PCDATA)>
-<!ATTLIST ship amount (1|2|3|4|5) #REQUIRED>
+<!ATTLIST ship amount (-1|0|1|2|3|4|5|6) #REQUIRED>
 <!ELEMENT strength (#PCDATA)>
 <!ELEMENT weakness (#PCDATA)>
+<!ELEMENT note (#PCDATA)>

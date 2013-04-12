@@ -38,7 +38,7 @@
 
 					<xsl:value-of select="name" />
 
-					<xsl:if test="@type = 'aggressive' or @type = 'defensive'">
+					<xsl:if test="@type = 'aggressive' or @type = 'defensive' or @type = 'architect' or @type = 'cargo'">
 						<span class="{@type}"></span>
 					</xsl:if>
 				</h2>
@@ -130,6 +130,16 @@
 						</xsl:if>
 					</div>
 				</xsl:if>
+				<xsl:if test="note">
+					<div class="notes">
+						<h4>Notes</h4>
+						<ul>
+							<xsl:for-each select="note">
+								<li class="note"><xsl:value-of select="."/></li>
+							</xsl:for-each>
+						</ul>
+					</div>
+				</xsl:if>
 			</div>
 		</xsl:for-each>
 	</xsl:for-each>
@@ -162,11 +172,14 @@
 				<div class="amount">
 					<span class="amount{@amount}">
 						<xsl:choose>
+							<xsl:when test="@amount = '0'">only</xsl:when>
 							<xsl:when test="@amount = '1'">lots of</xsl:when>
 							<xsl:when test="@amount = '2'">many</xsl:when>
 							<xsl:when test="@amount = '3'">some</xsl:when>
 							<xsl:when test="@amount = '4'">few</xsl:when>
 							<xsl:when test="@amount = '5'">very few</xsl:when>
+							<xsl:when test="@amount = '6'">one</xsl:when>
+							<xsl:when test="@amount = '-1'">unlimited</xsl:when>
 							<xsl:otherwise>???</xsl:otherwise>
 						</xsl:choose>
 					</span>

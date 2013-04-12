@@ -69,6 +69,15 @@ h2 {
 	background: url("graphics.png") 0px -2215px;
 }
 
+.Hybrid {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/71.jpg");
+} .Hybrid .faction {
+	color: #DDD;
+	text-shadow: 0 0 5px #444;
+} .Hybrid .factionimage {
+	background: url("graphics.png") -0px -2215px;
+}
+
 .Brotherhood {
 	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/51.jpg");
 }
@@ -139,7 +148,7 @@ h2 {
 	margin-bottom: -3px;
 }
 
-.counters, .fleet {
+.counters, .fleet, .notes {
 	border: 1px solid #444;
 	border-radius: 3px;
 
@@ -220,7 +229,10 @@ h2 {
  * A M O U N T S
  */
 
-.amount1 {
+.amount0 {
+	/* only */
+	color: #06D;
+} .amount1 {
 	color: #1D0;
 } .amount2 {
 	color: #4A0;
@@ -230,6 +242,12 @@ h2 {
 	color: #A40;
 } .amount5 {
 	color: #D10;
+} .amount6 {
+	/* single */
+	color: #A08;
+} .amount-1 {
+	/* cargo */
+	color: #06D;
 }
 
 /*
@@ -247,6 +265,20 @@ h2 {
 }
 
 .counters li {
+	list-style-type: none;
+
+	margin: 3px 20px;
+}
+
+/*
+ * N O T E S
+ */
+
+.notes {
+	padding: 20px;
+}
+
+.notes li {
 	list-style-type: none;
 
 	margin: 3px 20px;
@@ -288,12 +320,12 @@ h2 {
 	background-position: -350px -50px;
 }
 
-.Shadows {
-	background-position: -450px -50px;
+.Tigers, .Tigres {
+	background-position: -400px -50px;
 }
 
-.Tigers {
-	background-position: -400px -50px;
+.Shadows {
+	background-position: -450px -50px;
 }
 
 .ReconFalcons {
@@ -376,6 +408,10 @@ h2 {
 	background-position: -3250px -50px;
 }
 
+.Titans {
+	background-position: -5050px -50px;
+}
+
 .Mules {
 	background-position: -6050px -50px;
 }
@@ -388,7 +424,7 @@ h2 {
 	background-position: -6152px -50px;
 }
 
-.aggressive, .defensive {
+.aggressive, .defensive, .architect, .cargo {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -403,6 +439,14 @@ h2 {
 
 .defensive {
 	background-position: -456px -7px;
+}
+
+.architect {
+	background-position: -426px -7px;
+}
+
+.cargo {
+	background-position: -967px -7px;
 }
 
 a, a:link, a:visited {
