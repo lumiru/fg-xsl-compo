@@ -24,9 +24,9 @@ for(i = 0, l = links.length; i < l; ++i) {
 
 function chooseVariation(variation) {
 	return function() {
-		var compo = variation.parentNode.parentNode;
+		var compo = variation.parentNode.parentNode.parentNode;
 		var currentFleet = compo.getElementsByClassName("fleet").item(0);
-		var selectedVariations = variation.parentNode.getElementsByClassName("selected");
+		var selectedVariations = variation.parentNode.parentNode.getElementsByClassName("selected");
 		var nodes = variation.getElementsByClassName("ships").item(0).childNodes;
 		var i, l;
 
@@ -44,6 +44,6 @@ function chooseVariation(variation) {
 }
 
 for(i = 0, l = variations.length; i < l; ++i) {
-	variations[i].getElementsByTagName("h4").item(0)
+	variations[i].getElementsByTagName("p").item(0)
 		.addEventListener("click", chooseVariation(variations[i]), false);
 }

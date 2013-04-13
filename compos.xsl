@@ -77,30 +77,32 @@
 					<xsl:if test="ships[@type = 'variation']">
 						<div class="fleet variations">
 							<h3>Variations</h3>
-							<div class="variation selected">
-								<h4>Default</h4>
-								<div class="ships">
-									<xsl:for-each select="ships[not(@type)]/*">
-										<xsl:call-template name="shipList" />
-									</xsl:for-each>
-								</div>
-							</div>
-							<xsl:for-each select="ships[@type = 'variation']">
-								<div class="variation">
-									<h4>
-										<xsl:choose>
-											<xsl:when test="@title"><xsl:value-of select="@title" /></xsl:when>
-											<xsl:otherwise>Variation <xsl:value-of select="position()" /></xsl:otherwise>
-										</xsl:choose>
-									</h4>
-									
+							<ul>
+								<li class="variation selected">
+									<p>Default</p>
 									<div class="ships">
-										<xsl:for-each select="*">
+										<xsl:for-each select="ships[not(@type)]/*">
 											<xsl:call-template name="shipList" />
 										</xsl:for-each>
 									</div>
-								</div>
-							</xsl:for-each>
+								</li>
+								<xsl:for-each select="ships[@type = 'variation']">
+									<li class="variation">
+										<p>
+											<xsl:choose>
+												<xsl:when test="@title"><xsl:value-of select="@title" /></xsl:when>
+												<xsl:otherwise>Variation <xsl:value-of select="position()" /></xsl:otherwise>
+											</xsl:choose>
+										</p>
+										
+										<div class="ships">
+											<xsl:for-each select="*">
+												<xsl:call-template name="shipList" />
+											</xsl:for-each>
+										</div>
+									</li>
+								</xsl:for-each>
+							</ul>
 						</div>
 					</xsl:if>
 				</xsl:if>
