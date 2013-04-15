@@ -47,7 +47,7 @@
 			</ships>
 		</compo>
 		<compo min-pow="5k" type="aggressive">
-			<name>Recons</name>
+			<name>Full Recons</name>
 			<ships>
 				<front>
 					<ship amount="3">Templars</ship>
@@ -59,7 +59,30 @@
 					<ship amount="2">Recons</ship>
 				</back>
 			</ships>
+			<ships type="variation" title="Paladins">
+				<front>
+					<ship amount="3">Templars</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="3">Paladins</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Recons</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Low-tech">
+				<front>
+					<ship amount="4">Sentinels</ship>
+					<ship amount="2">Corsairs</ship>
+					<ship amount="2">Zeros</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Recons</ship>
+				</back>
+			</ships>
 			<strength>Raiders</strength>
+			<note>Recons can be replaced by Recon Falcons.</note>
 		</compo>
 	</category>
 	<category>
@@ -145,8 +168,8 @@
 				</back>
 			</ships>
 			<strength>Full Fury</strength>
+			<weakness>Full Spectres</weakness>
 			<weakness>Brutal fleets</weakness>
-			<weakness>Spectres</weakness>
 		</compo>
 		<compo min-pow="5k" type="aggressive">
 			<name>Full Fury</name>
