@@ -151,11 +151,26 @@
 				</back>
 			</ships>
 		</compo>
+		<compo type="cargo" min-pow="10k">
+			<name>Mineuse</name>
+			<ships>
+				<front>
+					<ship amount="4">Templars</ship>
+					<ship amount="4">Eclipses</ship>
+					<ship amount="3">Spectres</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="-1">Orions</ship>
+				</back>
+			</ships>
+			<note>En 10k, utilisez 3 Templars et 2 Eclipses.</note>
+		</compo>
 	</category>
 	<category>
 		<name>Brutal fleets</name>
-		<compo min-tech="4" min-pow="1k" type="aggressive">
-			<name>Full Spectres</name>
+		<compo min-pow="10k" type="aggressive">
+			<name>Full Spectre</name>
 			<ships>
 				<front>
 					<ship amount="1">Spectres</ship>
@@ -163,22 +178,61 @@
 					<ship amount="5">Guardians</ship>
 				</front>
 				<back>
+					<ship amount="6">Eclipses</ship>
 					<ship amount="5">Sentinels</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Shadows (Brotherhood)">
+				<front>
+					<ship amount="1">Spectres</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="6">Eclipses</ship>
 					<ship amount="5">Shadows</ship>
 				</back>
 			</ships>
-			<ships type="variation" title="Occultation">
+			<ships type="variation" title="Tigres (GDO)">
 				<front>
-					<ship amount="2">Spectres</ship>
-					<ship amount="5">Gardians</ship>
+					<ship amount="1">Spectres</ship>
 					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="6">Eclipses</ship>
+					<ship amount="5">Tigres</ship>
+				</back>
+			</ships>
+			<strength>Full destroyers</strength>
+			<weakness>Sentinels</weakness>
+			<note>Mettre plus de blades et très peu de gardiens en 20k+.</note>
+		</compo>
+		<compo min-tech="4" min-pow="1k" type="aggressive" faction="Hybrid">
+			<name>Full Spectre (light)</name>
+			<ships title="Shadows (Brotherhood)">
+				<front>
+					<ship amount="1">Spectres</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
 				</front>
 				<back>
 					<ship amount="5">Shadows</ship>
-					<ship amount="6">Eclipses</ship>
+					<ship amount="5">Sentinels</ship>
 				</back>
 			</ships>
-			<strength>Full Oblivion</strength>
+			<ships type="variation" title="Tigres (GDO)">
+				<front>
+					<ship amount="1">Spectres</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Tigres</ship>
+					<ship amount="5">Sentinels</ship>
+				</back>
+			</ships>
+			<strength>Full destroyers</strength>
 			<weakness>Sentinels</weakness>
 			<note>Mettre plus de blades et très peu de gardiens en 20k+.</note>
 		</compo>
