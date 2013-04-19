@@ -152,7 +152,7 @@
 					<ship amount="5">Shadows</ship>
 				</back>
 			</ships>
-			<strength>Full Oblivion</strength>
+			<strength>Full destroyers</strength>
 			<weakness>Sentinels</weakness>
 		</compo>
 		<compo min-tech="6" min-pow="5k" type="aggressive">
