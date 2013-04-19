@@ -79,7 +79,12 @@
 							<h3>Variations</h3>
 							<ul>
 								<li class="variation selected">
-									<p>Default</p>
+									<p>
+										<xsl:choose>
+											<xsl:when test="ships[not(@type)]/@title"><xsl:value-of select="ships/@title"/></xsl:when>
+											<xsl:otherwise>Default</xsl:otherwise>
+										</xsl:choose>
+									</p>
 									<div class="ships">
 										<xsl:for-each select="ships[not(@type)]/*">
 											<xsl:call-template name="shipList" />
