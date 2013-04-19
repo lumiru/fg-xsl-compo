@@ -29,6 +29,58 @@
 				</back>
 			</ships>
 		</compo>
+		<compo min-pow="40k" type="generic">
+			<name>Isha-one</name>
+			<ships title="Hades">
+				<front>
+					<ship amount="5">Trinities</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Hades</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Spectres">
+				<front>
+					<ship amount="5">Trinities</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Spectres</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Furies">
+				<front>
+					<ship amount="5">Trinities</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Furies</ship>
+				</back>
+			</ships>
+			<note>Contribution d’Ishamael pour 40k et 70k. :)</note>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Isha-two</name>
+			<ships>
+				<front>
+					<ship amount="3">Blades</ship>
+					<ship amount="4">Banshees</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Furies</ship>
+				</back>
+			</ships>
+			<strength>Sentinels</strength>
+		</compo>
 		<compo min-tech="8" min-pow="1k" type="aggressive">
 			<name>When I Don't Know</name>
 			<ships>
@@ -56,6 +108,120 @@
 					<ship amount="2">Raptors</ship>
 				</back>
 			</ships>
+		</compo>
+	</category>
+	<category>
+		<name>Defensive fleets</name>
+		<compo min-tech="8" min-pow="20k" type="defensive">
+			<name>Shield</name>
+			<ships>
+				<front>
+					<ship amount="2">Templars</ship>
+					<ship amount="2">Eclipses</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="2">Valkiries</ship>
+				</back>
+			</ships>
+			<weakness>Full Spectre</weakness>
+		</compo>
+		<compo min-tech="5" min-pow="500" type="cargo">
+			<name>Survivor</name>
+			<ships>
+				<front>
+					<ship amount="-1">Orions</ship>
+				</front>
+			</ships>
+			<strength>Shep fleets</strength>
+			<weakness>Anti-cargos</weakness>
+		</compo>
+		<compo min-tech="6" min-pow="2k" type="defensive">
+			<name>Soban tank</name>
+			<ships>
+				<front>
+					<ship amount="2">Paladins</ship>
+					<ship amount="2">Spectres</ship>
+					<ship amount="3">Banshees</ship>
+				</front>
+				<back>
+					<ship amount="2">Valkiries</ship>
+					<ship amount="4">Sentinels</ship>
+				</back>
+			</ships>
+		</compo>
+	</category>
+	<category>
+		<name>Brutal fleets</name>
+		<compo min-tech="4" min-pow="1k" type="aggressive">
+			<name>Full Spectres</name>
+			<ships>
+				<front>
+					<ship amount="1">Spectres</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="5">Shadows</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Occultation">
+				<front>
+					<ship amount="2">Spectres</ship>
+					<ship amount="5">Gardians</ship>
+					<ship amount="3">Blades</ship>
+				</front>
+				<back>
+					<ship amount="5">Shadows</ship>
+					<ship amount="6">Eclipses</ship>
+				</back>
+			</ships>
+			<strength>Full Oblivion</strength>
+			<weakness>Sentinels</weakness>
+			<note>Mettre plus de blades et très peu de gardiens en 20k+.</note>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Full Raptors</name>
+			<ships>
+				<front>
+					<ship amount="4">Banshees</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Raptors</ship>
+				</back>
+			</ships>
+		</compo>
+		<compo type="aggressive">
+			<name>Hurricane power</name>
+			<ships>
+				<front>
+					<ship amount="3">Hurricanes</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="2">Protectors</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Shadows (Brotherhood)">
+				<front>
+					<ship amount="3">Hurricanes</ship>
+					<ship amount="3">Blades</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Shadows</ship>
+					<ship amount="2">Protectors</ship>
+				</back>
+			</ships>
+			<note>Chargez les hurricanes en défense tout les 2 tours, et inversez les bonus/malus d’attaque et de défense des hurricanes avec les protecteurs en fin de combat pour bénéficier d’une attaque importante en ayant pris des dégâts réduits pendant le reste du combat.</note>
+			<note>Contribution d’Ishamael.</note>
 		</compo>
 		<compo min-pow="5k" type="aggressive">
 			<name>Full Recons</name>
@@ -95,66 +261,6 @@
 			<strength>Raiders</strength>
 			<note>Recons can be replaced by Recon Falcons.</note>
 		</compo>
-	</category>
-	<category>
-		<name>Defensive fleets</name>
-		<compo min-tech="8" min-pow="20k" type="defensive">
-			<name>Shield</name>
-			<ships>
-				<front>
-					<ship amount="2">Templars</ship>
-					<ship amount="2">Eclipses</ship>
-					<ship amount="5">Guardians</ship>
-				</front>
-				<back>
-					<ship amount="5">Sentinels</ship>
-					<ship amount="2">Valkiries</ship>
-				</back>
-			</ships>
-		</compo>
-		<compo min-tech="5" min-pow="500" type="cargo">
-			<name>Survivor</name>
-			<ships>
-				<front>
-					<ship amount="-1">Orions</ship>
-				</front>
-			</ships>
-			<strength>Shep fleets</strength>
-			<weakness>Anti-cargos</weakness>
-		</compo>
-		<compo min-tech="6" min-pow="2k" type="defensive">
-			<name>Soban tank</name>
-			<ships>
-				<front>
-					<ship amount="2">Paladins</ship>
-					<ship amount="2">Spectres</ship>
-					<ship amount="3">Banshees</ship>
-				</front>
-				<back>
-					<ship amount="2">Valkiries</ship>
-					<ship amount="4">Sentinels</ship>
-				</back>
-			</ships>
-		</compo>
-	</category>
-	<category>
-		<name>Brutal fleets</name>
-		<compo min-tech="4" min-pow="1k" faction="Brotherhood" type="aggressive">
-			<name>Full Spectres</name>
-			<ships>
-				<front>
-					<ship amount="1">Spectres</ship>
-					<ship amount="3">Blades</ship>
-					<ship amount="5">Guardians</ship>
-				</front>
-				<back>
-					<ship amount="5">Sentinels</ship>
-					<ship amount="5">Shadows</ship>
-				</back>
-			</ships>
-			<strength>Full Oblivion</strength>
-			<weakness>Sentinels</weakness>
-		</compo>
 		<compo min-tech="6" min-pow="5k" type="aggressive">
 			<name>Full Styx</name>
 			<ships>
@@ -186,6 +292,22 @@
 				</back>
 			</ships>
 			<weakness>Full Styx</weakness>
+		</compo>
+		<compo min-pow="5k" type="aggressive">
+			<name>Full Hades</name>
+			<ships>
+				<front>
+					<ship amount="3">Blades</ship>
+					<ship amount="4">Banshees</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="2">Hades</ship>
+				</back>
+			</ships>
+			<strength>Cruisers</strength>
+			<note>Suicidaire au dessus de 10k.</note>
 		</compo>
 		<compo type="aggressive">
 			<name>Anti-cargos</name>
@@ -265,34 +387,19 @@
 			</ships>
 			<weakness>Anti-minatoi PalaSpectres</weakness>
 		</compo>
-		<compo min-pow="5k" type="aggressive">
-			<name>Isha-one</name>
+		<compo faction="AutonomousNetwork">
+			<name>Natorius-one</name>
 			<ships>
 				<front>
-					<ship amount="3">Blades</ship>
-					<ship amount="4">Banshees</ship>
-					<ship amount="5">Guardians</ship>
+					<ship amount="5">Phoenixes</ship>
+					<ship amount="2">Blades</ship>
+					<ship amount="2">Spectres</ship>
 				</front>
 				<back>
-					<ship amount="5">Hellcats</ship>
-					<ship amount="2">Hades</ship>
+					<ship amount="4">Sentinels</ship>
+					<ship amount="4">Oblivions</ship>
 				</back>
 			</ships>
-		</compo>
-		<compo min-pow="5k" type="aggressive">
-			<name>Isha-two</name>
-			<ships>
-				<front>
-					<ship amount="3">Blades</ship>
-					<ship amount="4">Banshees</ship>
-					<ship amount="5">Guardians</ship>
-				</front>
-				<back>
-					<ship amount="5">Hellcats</ship>
-					<ship amount="2">Furies</ship>
-				</back>
-			</ships>
-			<strength>Sentinels</strength>
 		</compo>
 	</category>
 	<category>
