@@ -6,15 +6,26 @@
 		<name>Generic</name>
 		<compo min-tech="4" min-pow="1k">
 			<name>CorséZéros</name>
-			<ships>
+			<ships title="Hellcats">
 				<front>
 					<ship amount="2">Corsairs</ship>
 					<ship amount="2">Zeros</ship>
 					<ship amount="5">Guardians</ship>
 				</front>
 				<back>
-					<ship amount="4">Hellcats</ship>
-					<ship amount="4">Sentinels</ship>
+					<ship amount="5">Hellcats</ship>
+					<ship amount="5">Sentinels</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Banshees">
+				<front>
+					<ship amount="2">Corsairs</ship>
+					<ship amount="2">Zeros</ship>
+					<ship amount="5">Guardians</ship>
+				</front>
+				<back>
+					<ship amount="5">Banshees</ship>
+					<ship amount="5">Sentinels</ship>
 				</back>
 			</ships>
 		</compo>
@@ -133,7 +144,7 @@
 			<ships>
 				<front>
 					<ship amount="1">Spectres</ship>
-					<ship amount="3">Hellcats</ship>
+					<ship amount="3">Blades</ship>
 					<ship amount="5">Guardians</ship>
 				</front>
 				<back>
@@ -151,16 +162,6 @@
 					<ship amount="4">Templars</ship>
 					<ship amount="5">Spectres</ship>
 					<ship amount="5">Guardians</ship>
-				</front>
-				<back>
-					<ship amount="5">Sentinels</ship>
-					<ship amount="1">Styx</ship>
-				</back>
-			</ships>
-			<ships type="variation" title="Without Guardians">
-				<front>
-					<ship amount="4">Templars</ship>
-					<ship amount="5">Spectres</ship>
 				</front>
 				<back>
 					<ship amount="5">Sentinels</ship>
@@ -269,8 +270,8 @@
 			<ships>
 				<front>
 					<ship amount="3">Blades</ship>
-					<ship amount="5">Guardians</ship>
 					<ship amount="4">Banshees</ship>
+					<ship amount="5">Guardians</ship>
 				</front>
 				<back>
 					<ship amount="5">Hellcats</ship>
@@ -283,8 +284,8 @@
 			<ships>
 				<front>
 					<ship amount="3">Blades</ship>
-					<ship amount="5">Guardians</ship>
 					<ship amount="4">Banshees</ship>
+					<ship amount="5">Guardians</ship>
 				</front>
 				<back>
 					<ship amount="5">Hellcats</ship>
