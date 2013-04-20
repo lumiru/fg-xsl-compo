@@ -6,7 +6,7 @@
 }
 
 body {
-	background: black url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/31.jpg") center;
+	background: black url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/21.jpg") center repeat fixed;
 	color: #BBB;
 
 	text-shadow:
@@ -208,6 +208,9 @@ h2 {
 	width: 50px;
 	height: 50px;
 
+	margin-left: auto;
+	margin-right: auto;
+
 	margin-bottom: -3px;
 	margin-left: 2px; /* Looks better :$ */
 
@@ -332,6 +335,10 @@ h2 {
 	background-position: -550px -50px;
 }
 
+.Protectors {
+	background-position: -800px -50px;
+}
+
 .Valkiries {
 	background-position: -1050px -50px;
 }
@@ -409,7 +416,11 @@ h2 {
 }
 
 .Titans {
-	background-position: -5050px -50px;
+	background-position: -4050px -50px;
+}
+
+.Trinities {
+	background-position: -4100px -50px;
 }
 
 .Mules {
