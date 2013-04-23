@@ -111,6 +111,18 @@ h2 {
 	background: url("graphics.png") -90px -2215px;
 }
 
+.Corporations {
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/81.jpg");
+}
+.Corporations .factionimage {
+	background: url("graphics.png") -448px -134px;
+	width: 24px;
+
+	/* To compensate for the reduced size. */
+	margin-left: 6px;
+	margin-right: 12px;
+}
+
 .Brotherhood *, .GalacticDiplomaticOffice *, .AutonomousNetwork * {
 	background-image: none;
 }

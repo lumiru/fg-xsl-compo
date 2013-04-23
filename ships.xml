@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="ships.xsl" type="text/xsl" title="Default style"?>
+<ships>
+	<class>
+		<name>Fighters</name>
+		<ship>
+			<name>Recons</name>
+
+			<strong>Sentinels</strong>
+
+			<weak>Shadows</weak>
+			<weak>Guardians</weak>
+			<weak>Protectors</weak>
+			<weak>Tigres</weak>
+
+			<bestwith>Hellcats</bestwith>
+
+			<role>offensive</role>
+		</ship>
+		<ship faction="Corporations">
+			<name>Recon Falcons</name>
+			<strong>Sentinels</strong>
+			<weak>Shadows</weak>
+			<weak>Guardians</weak>
+			<weak>Protectors</weak>
+			<weak>Tigres</weak>
+			<weak>Raptors</weak>
+		</ship>
+		<ship>
+			<name>Corsairs</name>
+			<strong>Banshees</strong>
+			<weak>Protectors</weak>
+		</ship>
+		<ship>
+			<name>Raiders</name>
+			<weak>Sentinels</weak>
+			<weak>Templars</weak>
+			<weak>Eclipses</weak>
+			<weak>Hurricanes</weak>
+			<weak>Predators</weak>
+			<weak>Titans</weak>
+			<weak>Trinities</weak>
+		</ship>
+		<ship>
+			<name>Guardians</name>
+			<strong>Recons</strong>
+			<strong>Recon Falcons</strong>
+			<strong>Hellcats</strong>
+			<strong>Sentinels</strong>
+			<strong>Templars</strong>
+			<strong>Trinities</strong>
+		</ship>
+		<ship faction="Corporations">
+			<name>Protectors</name>
+			<strong>Recons</strong>
+			<strong>Recon Falcons</strong>
+			<strong>Corsairs</strong>
+			<strong>Hellcats</strong>
+			<strong>Sentinels</strong>
+			<strong>Spectres</strong>
+			<strong>Templars</strong>
+			<strong>Trinities</strong>
+		</ship>
+		<ship>
+			<name>Zeros</name>
+			<strong>Sentinels</strong>
+		</ship>
+		<ship>
+			<name>Fortress</name>
+		</ship>
+		<ship faction="Galactic Diplomatic Office">
+			<name>Tigres</name>
+			<strong>Recons</strong>
+			<strong>Recon Falcons</strong>
+		</ship>
+		<ship faction="Brotherhood">
+			<name>Shadows</name>
+			<strong>Recons</strong>
+			<strong>Recon Falcons</strong>
+		</ship>
+	</class>
+	<class>
+		<name>Corvettes</name>
+		<ship>
+			<name>Sentinels</name>
+
+			<strong>Raiders</strong>
+			<strong>Blades</strong>
+			<strong>Spectres</strong>
+			<strong>Hades</strong>
+			<strong>Scorpions</strong>
+
+			<weak>Zeros</weak>
+			<weak>Corsairs</weak>
+			<weak>Valkiries</weak>
+			<weak>Raptors</weak>
+			<weak>Furies</weak>
+			<weak>Styx</weak>
+			<weak>Oblivions</weak>
+		</ship>
+		<ship>
+			<name>Banshees</name>
+
+			<strong>Raiders</strong>
+			<strong>Blades</strong>
+			<strong>Spectres</strong>
+			<strong>Hades</strong>
+			<strong>Scorpions</strong>
+
+			<weak>Corsairs</weak>
+			<weak>Valkiries</weak>
+			<weak>Raptors</weak>
+			<weak>Furies</weak>
+			<weak>Styx</weak>
+			<weak>Oblivions</weak>
+		</ship>
+		<ship>
+			<name>Hellcats</name>
+			<weak>Guardians</weak>
+			<weak>Protectors</weak>
+		</ship>
+		<ship>
+			<name>Spectres</name>
+			<weak>Protectors</weak>
+			<weak>Banshees</weak>
+			<strong>Templars</strong>
+			<strong>Oblivions</strong>
+			<strong>Predators</strong>
+			<strong>Eclipses</strong>
+			<strong>Hurricanes</strong>
+			<bestwith>Hellcats</bestwith>
+		</ship>
+		<ship>
+			<name>Valkiries</name>
+			<strong>Sentinels</strong>
+			<strong>Banshees</strong>
+		</ship>
+		<ship>
+			<name>Raptors</name>
+			<strong>Sentinels</strong>
+			<strong>Banshees</strong>
+		</ship>
+	</class>
+	<class>
+		<name>Frigates</name>
+		<ship>
+			<name>Paladins</name>
+		</ship>
+		<ship>
+			<name>Furies</name>
+			<strong>Banshees</strong>
+			<strong>Sentinels</strong>
+			<weak>Styx</weak>
+			<bestwith>Hellcats</bestwith>
+			<bestwith>Templars</bestwith>
+		</ship>
+		<ship>
+			<name>Liberties</name>
+		</ship>
+		<ship>
+			<name>Styx</name>
+			<strong>Furies</strong>
+			<weak>Banshees</weak>
+		</ship>
+		<ship>
+			<name>Seraphins</name>
+		</ship>
+		<ship>
+			<name>Scorpions</name>
+			<weak>Sentinels</weak>
+		</ship>
+		<ship>
+			<name>Hades</name>
+			<weak>Sentinels</weak>
+		</ship>
+		<ship faction="Autonomous Network">
+			<name>Phoenixes</name>
+		</ship>
+	</class>
+	<class>
+		<name>Destroyers</name>
+		<ship>
+			<name>Templars</name>
+			<strong>Raiders</strong>
+			<weak>Guardians</weak>
+			<weak>Spectres</weak>
+		</ship>
+		<ship>
+			<name>Oblivions</name>
+			<strong>Sentinels</strong>
+			<weak>Spectres</weak>
+		</ship>
+		<ship>
+			<name>Eclipses</name>
+			<strong>Raiders</strong>
+			<weak>Spectres</weak>
+		</ship>
+		<ship>
+			<name>Predators</name>
+			<strong>Raiders</strong>
+			<weak>Spectres</weak>
+		</ship>
+		<ship>
+			<name>Hurricanes</name>
+			<strong>Raiders</strong>
+			<weak>Guardians</weak>
+			<weak>Protectors</weak>
+			<weak>Spectres</weak>
+		</ship>
+	</class>
+	<class>
+		<name>Cruisers</name>
+		<ship>
+			<name>Titans</name>
+			<strong>Raiders</strong>
+			<weak>Hades</weak>
+		</ship>
+		<ship>
+			<name>Trinities</name>
+			<strong>Raiders</strong>
+			<weak>Guardians</weak>
+			<weak>Protectors</weak>
+			<weak>Hades</weak>
+		</ship>
+	</class>
+</ships>

@@ -1,0 +1,73 @@
+
+h3 {
+	font-size: 18pt;
+	font-family: Sans-Serif;
+
+	margin: 10px;
+}
+
+.compo, h1 {
+	width: 600px;
+} .compo {
+	min-height: 163px;
+}
+
+.ship {
+	width: 55px;
+	height: 55px;
+}
+
+.ship.mainship {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-left: 7px;
+	margin-right: -7px;
+	margin-top: 4px;
+} .ship.mainship .shipimage {
+	margin-top: 25px;
+}
+
+.counters {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: auto;
+
+	text-align: right;
+}
+
+.counters div {
+	text-align: center;
+	margin: 2px;
+	vertical-align: top;
+}
+
+.strongAndWeak {
+	display: inline-block;
+	border-spacing: 3px;
+} .strongAndWeak, .bestwith {
+	display: inline-block;
+} .strong, .weak, .bestwith {
+	border: 1px solid #888;
+	border-radius: 3px;
+	background-color: rgba(127, 127, 127, 0.1);
+	padding: 3px;
+} .strong, .weak {
+	width: 230px;
+	display: table-cell;
+} div.bestwith {
+	display: block;
+	width: 471px;
+	margin-right: 5px;
+	margin-top: -2px;
+	margin-bottom: 5px;
+}
+
+.strong h4 {
+
+} .weak h4 {
+	
+}
+
