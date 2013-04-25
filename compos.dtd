@@ -1,6 +1,6 @@
 <!ELEMENT fleets (category*)>
 <!ELEMENT category (name, compo*)>
-<!ELEMENT compo (name, ships, strength*, weakness*, note?)>
+<!ELEMENT compo (name, ships+, strength*, weakness*, note?)>
 <!ATTLIST compo min-pow CDATA #IMPLIED>
 <!ATTLIST compo min-tech CDATA #IMPLIED>
 <!ATTLIST compo faction (Brotherhood|GalacticDiplomaticOffice|AutonomousNetwork|Hybrid) #IMPLIED>
