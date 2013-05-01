@@ -63,7 +63,7 @@ h2 {
 }
 
 .allFactions {
-	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/61.jpg");
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/131.jpg");
 }
 .allFactions .faction {
 	/* Should not exist. */
@@ -73,7 +73,7 @@ h2 {
 }
 
 .Hybrid {
-	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/71.jpg");
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/91.jpg");
 } .Hybrid .faction {
 	color: #DDD;
 	text-shadow: 0 0 5px #444;
@@ -82,7 +82,7 @@ h2 {
 }
 
 .Brotherhood {
-	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/51.jpg");
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/111.jpg");
 }
 .Brotherhood .faction {
 	color: #D00;
@@ -93,7 +93,7 @@ h2 {
 }
 
 .GalacticDiplomaticOffice {
-	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/11.jpg");
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/121.jpg");
 }
 .GalacticDiplomaticOffice .faction {
 	color: #06D;
@@ -104,7 +104,7 @@ h2 {
 }
 
 .AutonomousNetwork {
-	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/41.jpg");
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/101.jpg");
 }
 .AutonomousNetwork .faction {
 	color: #CA0;
@@ -115,7 +115,7 @@ h2 {
 }
 
 .Corporations {
-	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/81.jpg");
+	background: url("http://media.pandora.fallengalaxy.com/images/nebulas/dark/91.jpg");
 }
 .Corporations .factionimage {
 	background: url("graphics.png") -448px -134px;
