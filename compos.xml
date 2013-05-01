@@ -156,6 +156,42 @@
 			</ships>
 			<note>En 10k, utilisez 3 Templars et 2 Eclipses.</note>
 		</compo>
+		<compo type="cargo" min-pow="5k">
+			<name>Mineuse low-tech</name>
+			<ships title="Zeros">
+				<front>
+					<ship amount="2">Zeros</ship>
+					<ship amount="4">Banshees</ship>
+					<ship amount="3">Templars</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="-1">Orions</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Corsairs">
+				<front>
+					<ship amount="2">Corsairs</ship>
+					<ship amount="4">Banshees</ship>
+					<ship amount="3">Templars</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="-1">Orions</ship>
+				</back>
+			</ships>
+			<ships type="variation" title="Blades">
+				<front>
+					<ship amount="2">Blades</ship>
+					<ship amount="4">Banshees</ship>
+					<ship amount="3">Templars</ship>
+				</front>
+				<back>
+					<ship amount="5">Sentinels</ship>
+					<ship amount="-1">Orions</ship>
+				</back>
+			</ships>
+		</compo>
 	</category>
 	<category>
 		<name>Brutal fleets</name>
