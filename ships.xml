@@ -10,7 +10,6 @@
 
 			<weak>Shadows</weak>
 			<weak>Guardians</weak>
-			<weak>Protectors</weak>
 			<weak>Tigres</weak>
 
 			<bestwith>Hellcats</bestwith>
@@ -22,7 +21,6 @@
 			<strong>Sentinels</strong>
 			<weak>Shadows</weak>
 			<weak>Guardians</weak>
-			<weak>Protectors</weak>
 			<weak>Tigres</weak>
 			<weak>Raptors</weak>
 		</ship>
@@ -52,14 +50,9 @@
 		</ship>
 		<ship faction="Corporations">
 			<name>Protectors</name>
-			<strong>Recons</strong>
-			<strong>Recon Falcons</strong>
 			<strong>Corsairs</strong>
 			<strong>Hellcats</strong>
-			<strong>Sentinels</strong>
 			<strong>Spectres</strong>
-			<strong>Templars</strong>
-			<strong>Trinities</strong>
 		</ship>
 		<ship>
 			<name>Zeros</name>
@@ -204,7 +197,6 @@
 			<name>Hurricanes</name>
 			<strong>Raiders</strong>
 			<weak>Guardians</weak>
-			<weak>Protectors</weak>
 			<weak>Spectres</weak>
 		</ship>
 	</class>
@@ -219,7 +211,6 @@
 			<name>Trinities</name>
 			<strong>Raiders</strong>
 			<weak>Guardians</weak>
-			<weak>Protectors</weak>
 			<weak>Hades</weak>
 		</ship>
 	</class>
