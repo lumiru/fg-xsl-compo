@@ -22,7 +22,7 @@
 				<xsl:choose>
 					<xsl:when test="@faction">
 						<xsl:attribute name="class">
-							compo <xsl:value-of select="translate(@faction, ' ', '')"/>
+							compo <xsl:value-of select="@faction"/>
 						</xsl:attribute>
 					</xsl:when>
 				</xsl:choose>
