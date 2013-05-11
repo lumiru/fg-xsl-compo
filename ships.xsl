@@ -42,42 +42,16 @@
 						<h4>Strong against</h4>
 
 						<!-- FIXME: Template -->
-						<div class="ships">
-							<xsl:choose>
-								<xsl:when test="strong">
-									<xsl:for-each select="strong">
-										<div class="ship">
-											<div class="shipimage {translate(., ' ', '')}"/>
-										</div>
-									</xsl:for-each>
-								</xsl:when>
-								<xsl:otherwise>
-									<div>
-										none in particular
-									</div>
-								</xsl:otherwise>
-							</xsl:choose>
-						</div>
+						<xsl:call-template name="showShipsIfHas">
+							<xsl:with-param name="elem" select="strong" />
+						</xsl:call-template>
 					</div>
 					<div class="weak">
 						<h4>Weak against</h4>
 
-						<div class="ships">
-							<xsl:choose>
-								<xsl:when test="weak">
-									<xsl:for-each select="weak">
-										<div class="ship">
-											<div class="shipimage {translate(., ' ', '')}"/>
-										</div>
-									</xsl:for-each>
-								</xsl:when>
-								<xsl:otherwise>
-									<div>
-										none in particular
-									</div>
-								</xsl:otherwise>
-							</xsl:choose>
-						</div>
+						<xsl:call-template name="showShipsIfHas">
+							<xsl:with-param name="elem" select="weak" />
+						</xsl:call-template>
 					</div>
 					</div>
 
@@ -87,11 +61,7 @@
 								<h4>Best with</h4>
 
 								<div class="ships">
-									<xsl:for-each select="bestwith">
-										<div class="ship">
-											<div class="shipimage {translate(., ' ', '')}"/>
-										</div>
-									</xsl:for-each>
+									<xsl:apply-templates select="bestwith" />
 								</div>
 							</div>
 						</xsl:when>
@@ -102,6 +72,28 @@
 	</xsl:for-each>
 </body>
 </html>
+</xsl:template>
+
+<xsl:template name="showShipsIfHas">
+	<xsl:param name="elem" />
+	<div class="ships">
+		<xsl:choose>
+			<xsl:when test="$elem">
+				<xsl:apply-templates select="$elem" />
+			</xsl:when>
+			<xsl:otherwise>
+				<div>
+					none in particular
+				</div>
+			</xsl:otherwise>
+		</xsl:choose>
+	</div>
+</xsl:template>
+
+<xsl:template match="strong | weak | bestwith">
+	<div class="ship">
+		<div class="shipimage {translate(., ' ', '')}"/>
+	</div>
 </xsl:template>
 
 </xsl:stylesheet> 
